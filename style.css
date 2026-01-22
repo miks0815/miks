@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #333;
+}
+
+/* FLOATING HEARTS */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  color: rgba(255, 105, 180, 0.6);
+  font-size: 20px;
+  animation: floatUp 8s linear infinite;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(0) scale(1); opacity: 1; }
+  to { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+}
+
+/* LOGIN */
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+input {
+  padding: 12px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #ff7eb3;
+  color: white;
+  cursor: pointer;
+}
+
+#main {
+  display: none;
+}
+
+header {
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ff4f9a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section {
+  display: none;
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.active {
+  display: block;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
